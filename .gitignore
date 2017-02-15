@@ -9,5 +9,4 @@
 /spec/reports/
 /tmp/
 /.cache/
-/amazon-kinesis-producer-native-binarie*
 /.ruby-version
