@@ -58,8 +58,9 @@ module Fluent
       end
 
       def convert_record(tag, time, record)
+        return if record.nil?
+
         unless record.is_a? Hash
-          puts record.inspect
           raise InvalidRecordError, record
         end
         converted = convert_format(tag, time, record)
